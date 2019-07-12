@@ -28,10 +28,10 @@ public class Activity2 extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences("userInfo", MODE_PRIVATE);
         txtName.setText(sp.getString("user", ""));
         txtPassword.setText(sp.getString("user", ""));
-        String mail = txtEmail.getText().toString();
-        Intent i3 = new Intent(this, Activity3.class);
-        i3.putExtra("person", mail);
-        startActivity(i3);
+        String name = txtName.getText().toString();
+        Intent i2 = new Intent(this, Activity2.class);
+        i2.putExtra("person", name);
+        startActivity(i2);
     }
 
 }
