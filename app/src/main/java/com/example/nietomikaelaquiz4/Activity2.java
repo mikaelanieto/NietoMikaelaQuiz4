@@ -17,6 +17,7 @@ public class Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
         txtName =findViewById(R.id.tvUser);
         txtPassword = findViewById(R.id.tvPassword);
+        txtEmail = findViewById(R.id.etEmail);
     }
 
     public void showMainActivity(View v) {
@@ -28,8 +29,8 @@ public class Activity2 extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences("userInfo", MODE_PRIVATE);
         txtName.setText(sp.getString("user", ""));
         txtPassword.setText(sp.getString("user", ""));
-        String name = txtName.getText().toString();
-        Intent i2 = new Intent(this, Activity2.class);
+        String name = txtEmail.getText().toString();
+        Intent i2 = new Intent(this, Activity3.class);
         i2.putExtra("person", name);
         startActivity(i2);
     }
