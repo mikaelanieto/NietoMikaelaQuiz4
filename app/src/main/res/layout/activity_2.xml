@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.049" />
 
     <TextView
-        android:id="@+id/tvEmail"
+        android:id="@+id/etEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
         app:layout_constraintVertical_bias="0.19" />
 
     <TextView
@@ -97,18 +97,18 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="showActivity3"
+        android:onClick="showScreen2"
         android:text="login"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword"
         app:layout_constraintVertical_bias="0.672" />
 
     <TextView
-        android:id="@+id/etPassword"
+        android:id="@+id/tvPassword"
         android:layout_width="234dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -122,11 +122,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/tvUser"
         app:layout_constraintVertical_bias="0.153" />
 
     <TextView
-        android:id="@+id/etName"
+        android:id="@+id/tvUser"
         android:layout_width="234dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -140,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
         app:layout_constraintVertical_bias="0.189" />
 
 </android.support.constraint.ConstraintLayout>
